@@ -3,6 +3,8 @@
 > A smart web app that helps users locate nearby garbage bins and check their fill levels in real time.
 
 ---
+### 🔗 [🌐 Live Demo](https://smart-trash-tracker.vercel.app/)
+
 
 ## 🔍 Real-Life Problem
 
