@@ -1,12 +1,67 @@
-# React + Vite
+# 🧠 Smart Trash Tracker
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+> A smart web app that helps users locate nearby garbage bins and check their fill levels in real time.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🔍 Real-Life Problem
 
-## Expanding the ESLint configuration
+Urban neighborhoods often suffer from **irregular garbage collection** and **overflowing bins**. It's frustrating for residents to carry trash out only to find the bin full or inaccessible. This app solves that problem by making bin status visible and accessible.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+## 🌐 Project Overview
+
+**Smart Trash Tracker** is a web-based application that:
+- Detects the user's location using Geolocation API
+- Displays garbage bins with real-time fill level
+- Helps users decide whether it’s a good time to head out with their trash
+
+---
+
+## 🧰 APIs Used
+
+| API | Purpose |
+|-----|---------|
+| 🌍 Geolocation API | Finds the user's current location to show nearby garbage bins |
+| 👀 Intersection Observer API | Lazily loads bin data only when visible on screen |
+| 📶 Network Information API | Checks connection type and adjusts the UI accordingly |
+| 🗺️ (Optional) Canvas API | Can display visual overlays for bin fill levels |
+| 🔁 (Optional) Background Tasks API | Refreshes bin data periodically without UI blocking |
+
+---
+
+## 📱 Features
+
+- 🗺️ **Interactive Map**: View bins with color-coded fill levels  
+- 🔔 **Smart Alerts**: Warns if your nearest bin is full or acceptable  
+- 🔄 **Auto Updates**: Bin data refreshes periodically  
+- ⚡ **Low Data Mode**: UI simplifies automatically on slow networks  
+
+---
+
+## 🎯 Benefits
+
+- Avoids unnecessary trips with full trash bags  
+- Encourages better public waste disposal habits  
+- Improves waste collection transparency for municipalities  
+
+---
+
+## 🚀 Getting Started
+
+### 📦 Prerequisites
+
+Make sure you have:
+
+- Node.js and npm installed
+- Git installed
+
+### ⚙️ Setup Instructions
+
+```bash
+git clone https://github.com/sadiqahmednadaf5/smart-trash-tracker.git
+cd smart-trash-tracker
+npm install
+npm run dev
+
