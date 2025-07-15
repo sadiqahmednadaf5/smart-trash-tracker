@@ -1,0 +1,111 @@
+/* Reset some default styling */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  background-color: #f5f7fa;
+  color: #333;
+}
+
+/* App Container */
+.app-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Header */
+.app-header {
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  padding: 30px 25px;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.app-header h1 {
+  font-size: 2.5rem;
+  color: #2d3748;
+  margin-bottom: 10px;
+}
+
+.app-header p {
+  font-size: 1rem;
+  color: #4a5568;
+}
+
+.app-header input {
+  border: 1px solid #cbd5e0;
+  border-radius: 8px;
+  padding: 10px;
+  font-size: 1rem;
+  margin-top: 15px;
+  width: 100%;
+  max-width: 400px;
+}
+
+/* Main Content */
+.app-main {
+  padding: 10px;
+}
+
+hr {
+  margin: 20px 0;
+  border: 0;
+  border-top: 1px solid #e2e8f0;
+}
+
+/* Bin Container */
+.bin-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+}
+
+/* Bin Box */
+.bin-box {
+  background: #ffffff;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  transition: transform 0.2s ease-in-out, box-shadow 0.2s;
+}
+
+.bin-box:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+}
+
+.bin-box h3 {
+  font-size: 1.4rem;
+  margin-bottom: 8px;
+  color: #1a202c;
+}
+
+.bin-box p {
+  font-size: 1rem;
+  margin-bottom: 5px;
+  color: #2d3748;
+}
+
+/* Fill Status */
+.bin-box p:last-child {
+  font-weight: bold;
+  font-size: 1rem;
+}
+
+/* Responsive */
+@media screen and (max-width: 600px) {
+  .app-header h1 {
+    font-size: 1.8rem;
+  }
+
+  .app-header input {
+    width: 100%;
+  }
+}
